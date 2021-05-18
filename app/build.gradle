@@ -4,10 +4,15 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        viewBinding true
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
+        multiDexEnabled true
+
         applicationId "com.akiramenaide.capstoneproject"
         minSdkVersion 25
         targetSdkVersion 30
@@ -33,6 +38,10 @@ android {
 }
 
 dependencies {
+    implementation "androidx.paging:paging-runtime:2.1.1"
+
+    implementation 'com.github.AAChartModel:AAChartCore-Kotlin:-SNAPSHOT'
+
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'

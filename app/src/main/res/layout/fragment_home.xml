@@ -23,7 +23,13 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:backgroundTint="#51C4D3"
-            app:cardCornerRadius="20dp" />
+            app:cardCornerRadius="20dp">
+
+            <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
+                android:id="@+id/aa_chart_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
