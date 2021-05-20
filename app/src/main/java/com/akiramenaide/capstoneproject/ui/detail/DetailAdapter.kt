@@ -20,7 +20,7 @@ class DetailAdapter: RecyclerView.Adapter<DetailAdapter.DetailViewHolder>() {
                 judul.text = itemView.context.getString(R.string.in_dataset, fruit.name)
                 skor.text = fruit.total.toString()
                 persen.text = itemView.context.getString(R.string.in_good_quality, fruit.freshPercentage.toString(), fruit.name)
-                binding.bindBarChart(fruit)
+                bindBarChart(fruit)
             }
         }
     }

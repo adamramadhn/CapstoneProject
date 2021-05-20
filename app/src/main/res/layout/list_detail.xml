@@ -25,6 +25,8 @@
                 android:id="@+id/judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_big"
+                android:paddingEnd="0dp"
                 android:textColor="#000000"
                 android:textSize="@dimen/text_size_mid"
                 tools:text="@string/in_dataset" />
@@ -33,6 +35,8 @@
                 android:id="@+id/skor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_big"
+                android:paddingEnd="0dp"
                 android:textColor="#000000"
                 android:textSize="@dimen/text_size_big"
                 tools:text="9998" />
@@ -47,6 +51,8 @@
                 android:id="@+id/persen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_big"
+                android:paddingEnd="0dp"
                 android:textColor="#000000"
                 android:textSize="@dimen/text_size_mid"
                 tools:text="@string/in_good_quality" />
