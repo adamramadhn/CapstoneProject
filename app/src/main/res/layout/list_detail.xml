@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_margin="@dimen/padding_big"
         android:backgroundTint="#51C4D3"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,14 +19,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="@dimen/padding_small">
 
             <TextView
                 android:id="@+id/judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
-                android:textSize="20sp"
+                android:textSize="@dimen/text_size_mid"
                 tools:text="XXX in Dataset" />
 
             <TextView
@@ -34,17 +34,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
-                android:textSize="40sp"
+                android:textSize="@dimen/text_size_big"
                 tools:text="9998" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/horizontal_bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="16dp"/>
 
             <TextView
                 android:id="@+id/persen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
-                android:textSize="20sp"
-                tools:text="34% XX in Good Wuality" />
+                android:textSize="@dimen/text_size_mid"
+                tools:text="34% XX in Good Quality" />
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,14 @@
-package com.akiramenaide.capstoneproject
+package com.akiramenaide.capstoneproject.ui.main
 
 import android.content.Context
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.akiramenaide.capstoneproject.R
+import com.akiramenaide.capstoneproject.ui.detail.DetailFragment
+import com.akiramenaide.capstoneproject.ui.home.HomeFragment
+import com.akiramenaide.capstoneproject.ui.profile.ProfileFragment
 
 class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 

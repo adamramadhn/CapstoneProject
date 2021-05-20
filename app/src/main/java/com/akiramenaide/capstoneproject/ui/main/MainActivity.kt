@@ -1,10 +1,8 @@
-package com.akiramenaide.capstoneproject
+package com.akiramenaide.capstoneproject.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.akiramenaide.capstoneproject.databinding.ActivityMainBinding
-import com.github.aachartmodel.aainfographics.aachartcreator.*
-import com.github.aachartmodel.aainfographics.aaoptionsmodel.AAStyle
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
