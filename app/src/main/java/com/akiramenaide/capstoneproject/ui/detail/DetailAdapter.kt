@@ -1,5 +1,6 @@
 package com.akiramenaide.capstoneproject.ui.detail
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -47,6 +48,8 @@ class DetailAdapter: RecyclerView.Adapter<DetailAdapter.DetailViewHolder>() {
         barValues.add(BarEntry(0f, floatArrayOf(freshTotal, notFreshTotal)))
         val dataSet = BarDataSet(barValues, "")
         dataSet.colors = MyColors.stackedColorArray
+        dataSet.setValueTextColors(MyColors.stackedColorArray)
+        dataSet.valueTextSize = 10f
         dataSet.stackLabels = arrayOf("Fresh Fruit", "Bad Fruit")
 
         horizontalBarChart.apply {

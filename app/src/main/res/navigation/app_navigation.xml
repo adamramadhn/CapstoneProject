@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_analysis"
-        android:name="com.akiramenaide.capstoneproject.ui.profile.ProfileFragment"
+        android:name="com.akiramenaide.capstoneproject.ui.detail.DetailFragment"
         android:label="@string/title_analysis"
         tools:layout="@layout/fragment_detail" />
 

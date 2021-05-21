@@ -1,11 +1,17 @@
 package com.akiramenaide.capstoneproject.core.data.entity
 
+import java.math.RoundingMode
+import java.text.DecimalFormat
+
 data class FruitEntity(
     val id: Int,
     var name: String,
     var total: Int,
     var freshTotal: Int
 ) {
-    var freshPercentage = freshTotal.toFloat() * 100/total.toFloat()
+    private val df = DecimalFormat("#.##").apply {
+        roundingMode = RoundingMode.HALF_UP
+    }
+    var freshPercentage: Float = df.format(freshTotal.toFloat() * 100/total.toFloat()).toFloat()
     var isMajorityFresh = freshPercentage > 50
 }

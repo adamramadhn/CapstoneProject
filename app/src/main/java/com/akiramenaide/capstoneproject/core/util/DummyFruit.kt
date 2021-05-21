@@ -7,20 +7,28 @@ object DummyFruit {
         1,
         "Banana",
         124,
-        88,
+        88
     )
 
     private val corn = FruitEntity(
         2,
         "Corn",
         190,
-        141,
+        141
+    )
+
+    private val pineapple = FruitEntity(
+        3,
+        "Pineapple",
+        914,
+        398
     )
 
     fun getAllFruits(): List<FruitEntity> {
         val fruits = ArrayList<FruitEntity>()
         fruits.add(banana)
         fruits.add(corn)
+        fruits.add(pineapple)
         return fruits
     }
 

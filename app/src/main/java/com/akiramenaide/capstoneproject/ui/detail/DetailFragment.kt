@@ -34,12 +34,10 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        if (activity != null) {
-            val fruits = DummyFruit.getAllFruits()
-            pieChart = binding.pieChart
-            drawPieChart(fruits)
-            drawRecyclerView(fruits)
-        }
+        val fruits = DummyFruit.getAllFruits()
+        pieChart = binding.pieChart
+        drawPieChart(fruits)
+        drawRecyclerView(fruits)
     }
 
     private fun drawPieChart(fruits: List<FruitEntity>){
@@ -57,6 +55,7 @@ class DetailFragment : Fragment() {
             isDrawHoleEnabled = false
             setDrawEntryLabels(false)
             isRotationEnabled = false
+            setUsePercentValues(true)
             animateY(1000)
         }
         dataSet.colors = brightColors

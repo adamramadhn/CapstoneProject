@@ -7,7 +7,8 @@ object MyColors {
         Color.YELLOW,
         Color.GREEN,
         Color.MAGENTA,
-        Color.CYAN
+        Color.CYAN,
+        Color.GRAY
     )
     val stackedColorArray = arrayListOf(
         Color.WHITE,
