@@ -12,6 +12,7 @@ data class FruitEntity(
     private val df = DecimalFormat("#.##").apply {
         roundingMode = RoundingMode.HALF_UP
     }
+    var notFreshTotal = total - freshTotal
     var freshPercentage: Float = df.format(freshTotal.toFloat() * 100/total.toFloat()).toFloat()
-    var isMajorityFresh = freshPercentage > 50
+    //var isMajorityFresh = freshPercentage > 50
 }

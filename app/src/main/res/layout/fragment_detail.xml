@@ -11,12 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/padding_giant"
+        android:nestedScrollingEnabled="true"
         android:background="#D8E3E7">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
             android:layout_width="350dp"
-            android:layout_height="330dp"
+            android:layout_height="360dp"
             android:layout_marginTop="32dp"
             android:backgroundTint="#126E82"
             app:cardCornerRadius="30dp"
@@ -24,11 +25,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <TextView
+                android:id="@+id/pie_chart_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_small"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_big"
+                android:textAlignment="center"
+                android:text="@string/pie_title" />
+
             <com.github.mikephil.charting.charts.PieChart
                 android:id="@+id/pie_chart"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_margin="16dp"/>
+                android:layout_marginTop="@dimen/padding_huge"
+                android:layout_marginHorizontal="@dimen/padding_mid"/>
 
         </androidx.cardview.widget.CardView>
 

@@ -29,6 +29,7 @@
                 android:paddingEnd="0dp"
                 android:textColor="#000000"
                 android:textSize="@dimen/text_size_mid"
+                android:textIsSelectable="true"
                 tools:text="@string/in_dataset" />
 
             <TextView
@@ -39,6 +40,7 @@
                 android:paddingEnd="0dp"
                 android:textColor="#000000"
                 android:textSize="@dimen/text_size_big"
+                android:textIsSelectable="true"
                 tools:text="9998" />
 
             <com.github.mikephil.charting.charts.HorizontalBarChart
@@ -55,6 +57,7 @@
                 android:paddingEnd="0dp"
                 android:textColor="#000000"
                 android:textSize="@dimen/text_size_mid"
+                android:textIsSelectable="true"
                 tools:text="@string/in_good_quality" />
 
         </LinearLayout>

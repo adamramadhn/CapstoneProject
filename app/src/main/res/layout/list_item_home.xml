@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:paddingStart="10dp"
+            android:paddingEnd="0dp"
             tools:text="Item X"
             android:textColor="#132C33"
             android:textSize="20sp" />
@@ -28,6 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|center_vertical"
+            android:paddingStart="0dp"
             android:paddingEnd="10dp"
             tools:text="+xx%"
             android:textColor="#004E16"

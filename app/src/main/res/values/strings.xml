@@ -6,8 +6,9 @@
     <string name="detail">Detail</string>
     <string name="profile">Profile</string>
     <string name="in_dataset">%s in Dataset</string>
-    <string name="in_good_quality">%1$s %% %2$s in Good Quality</string>
+    <string name="in_good_quality">%1$s%% %2$s in Good Quality</string>
     <string name="title_home">Home</string>
     <string name="title_analysis">Analysis</string>
     <string name="title_profile">Profile</string>
+    <string name="pie_title">Fruits Total in Dataset (in %)</string>
 </resources>

@@ -10,6 +10,7 @@ import com.akiramenaide.capstoneproject.core.data.entity.FruitEntity
 import com.akiramenaide.capstoneproject.core.util.DummyFruit
 import com.akiramenaide.capstoneproject.databinding.FragmentDetailBinding
 import com.akiramenaide.capstoneproject.ui.util.MyColors
+import com.akiramenaide.capstoneproject.ui.util.MyColors.darkCyan
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
@@ -52,11 +53,12 @@ class DetailFragment : Fragment() {
                 setValueFormatter(PercentFormatter())
                 setValueTextSize(12f)
             }
-            isDrawHoleEnabled = false
             setDrawEntryLabels(false)
+            setHoleColor(darkCyan)
             isRotationEnabled = false
             setUsePercentValues(true)
             animateY(1000)
+            description.text = ""
         }
         dataSet.colors = brightColors
     }

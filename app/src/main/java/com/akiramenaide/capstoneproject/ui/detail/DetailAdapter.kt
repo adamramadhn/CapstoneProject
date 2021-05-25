@@ -43,7 +43,7 @@ class DetailAdapter: RecyclerView.Adapter<DetailAdapter.DetailViewHolder>() {
 
     private fun ListDetailBinding.bindBarChart(fruit: FruitEntity){
         val freshTotal = fruit.freshTotal.toFloat()
-        val notFreshTotal = (fruit.total - fruit.freshTotal).toFloat()
+        val notFreshTotal = fruit.notFreshTotal.toFloat()
         val barValues = ArrayList<BarEntry>()
         barValues.add(BarEntry(0f, floatArrayOf(freshTotal, notFreshTotal)))
         val dataSet = BarDataSet(barValues, "")

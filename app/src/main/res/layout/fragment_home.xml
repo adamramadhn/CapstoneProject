@@ -25,11 +25,14 @@
             android:backgroundTint="#51C4D3"
             app:cardCornerRadius="20dp">
 
-            <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
-                android:id="@+id/aa_chart_view"
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="180dp"
+                android:layout_margin="@dimen/padding_big"/>
+
         </androidx.cardview.widget.CardView>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
